@@ -32,7 +32,7 @@ module Tictactoe
       end
 
       def minmax(game_state, depth, lower_bound, upper_bound)
-        return evaluate_state(game_state, depth) if game_state.over?
+        return dadaevaluate_state(game_state, depth) if game_state.over?
         candidate_move_nodes = []
         game_state.available_moves.each do |move|
           child_board = game_state.make_move(move)
